@@ -22,6 +22,21 @@
 					<header id="header">
 						<h1>Trong Hao</h1>
 						<p>Trên con đường thành công &nbsp;&bull;&nbsp; Không có &nbsp;&bull;&nbsp; Dấu chân kẻ lười biếng</p>
+						
+						<nav>
+						<?php
+							if ( has_nav_menu( 'Primary' ) ) {
+								wp_nav_menu([
+									'theme_location' 	=> 'Primary',
+									'container' 		=> false, //the bao boc menu
+									'menu_class' 		=> '',
+									'fallback_cp'		=> false, //hien thi menu mac dinh
+									'depth'				=> 4  // bao nhieu cap menu
+								]);
+							}
+						?>
+						</nav>
+						
 						<nav>
 							<ul>
 								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
