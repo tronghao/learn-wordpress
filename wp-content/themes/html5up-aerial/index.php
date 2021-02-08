@@ -31,7 +31,8 @@
 									'container' 		=> false, //the bao boc menu
 									'menu_class' 		=> '',
 									'fallback_cp'		=> false, //hien thi menu mac dinh
-									'depth'				=> 4  // bao nhieu cap menu
+									'depth'				=> 4,  // bao nhieu cap menu
+									'walker' 			=> new JA_Custom_Nav_Menu()
 								]);
 							}
 						?>
